@@ -1,3 +1,7 @@
+body {
+  background-image: url("bg.jpg");
+  color:white;
+ }
 h1,li{
   font-family: 'Roboto', sans-serif;
   }
@@ -8,7 +12,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #00523b;
   }
   li {
     float: left;
@@ -44,3 +48,16 @@ h2{
   margin-right: auto;
   width: 50%;
 }
+/* .adds margin to section */
+.main
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+a {
+    color: white;
+  
+}
+
+
+
