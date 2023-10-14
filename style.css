@@ -1,6 +1,6 @@
 body {
   background-image: url("bg.jpg");
-  color:white;
+  color:black;
  }
 h1,li{
   font-family: 'Roboto', sans-serif;
@@ -12,20 +12,20 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #00523b;
+    background-image: url("nav.png");
   }
   li {
     float: left;
   }
   li a {
     display: block;
-    color: white;
+    color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   li a:hover {
-    background-color: #111;
+    background-color: whitesmoke;
   }
   /* Navbar closing */
 p{
@@ -55,8 +55,11 @@ h2{
     margin-right: 20px;
 }
 a {
-    color: white;
+    color: black;
   
+}
+a.hyper:hover{
+    color: darkblue;
 }
 
 
