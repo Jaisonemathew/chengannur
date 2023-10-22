@@ -2,9 +2,16 @@ body {
   background-image: url("bg.jpg");
   color:black;
  }
-h1,li{
-  font-family: 'Roboto', sans-serif;
-  }
+
+ table, td, th {
+  border: 1px solid;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+ 
 
 /* Navbar */
 ul {
@@ -16,6 +23,9 @@ ul {
   }
   li {
     float: left;
+    font-family: 'Tilt Neon', sans-serif;
+
+    font-weight: bold;
   }
   li a {
     display: block;
