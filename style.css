@@ -2,7 +2,7 @@ body {
   background-image: url("bg.jpg");
   color:black;
  }
-
+/* Biodata table */
  table, td, th {
   border: 1px solid;
 }
@@ -11,7 +11,11 @@ table {
   width: 100%;
   border-collapse: collapse;
 }
- 
+td{
+  text-align: center
+  font-size:20px;
+}
+/* Biodata table end */
 
 /* Navbar */
 ul {
@@ -37,7 +41,7 @@ ul {
   li a:hover {
     background-color: whitesmoke;
   }
-  /* Navbar closing */
+  /* Navbar end */
 p{
   font-family: 'Inter', sans-serif;
     text-align: justify;
