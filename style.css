@@ -1,6 +1,7 @@
 body {
-  background-image: url("bg.jpg");
-  color:black;
+background-image: url("forest-438432.jpg");
+background-size: cover;
+color:whitesmoke;
  }
 /* Biodata table */
  table, td, th {
@@ -12,9 +13,14 @@ table {
   border-collapse: collapse;
 }
 td{
-  text-align: center
-  font-size:20px;
+  text-align: center;
+  font-size: 25px;
 }
+th{
+  background-color:#646850;
+  font-size: 25px;
+}
+
 /* Biodata table end */
 
 /* Navbar */
@@ -23,7 +29,9 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-image: url("nav.png");
+    background-color:#646850;
+    background-repeat: no-repeat;
+background-size: cover;
   }
   li {
     float: left;
@@ -33,13 +41,23 @@ ul {
   }
   li a {
     display: block;
-    color: black;
+    color: whitesmoke;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   li a:hover {
-    background-color: whitesmoke;
+    background-color: #4f5a2f;
+  }
+  li a.active {
+    color: white;
+    background-color: #5d5535;
+  }
+
+  .sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
   }
   /* Navbar end */
 p{
@@ -69,12 +87,13 @@ h2{
     margin-right: 20px;
 }
 a {
-    color: black;
+    color: whitesmoke;
   
 }
 a.hyper:hover{
-    color: darkblue;
+    color: burlywood;
 }
-
-
+h1{
+  font-size: 3rem;
+}
 
