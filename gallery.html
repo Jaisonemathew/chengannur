@@ -1,0 +1,131 @@
+<html>
+<head>
+<title>Chengannur Tourism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@500&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+
+<style>
+.slideshow-container {
+  text-align: center;
+}
+</style>
+
+<body>
+<div class="h1">
+<hr><center><h1>Image Gallery</h1></center><hr>
+</div>
+<nav class="sticky">
+<ul>
+<li><a  href="index.html">Home</b></a></li>
+<li><a href="places.html">Places</a></li>
+<li><a class="active" href="gallery.html">Gallery</a></li> 
+<li><a href="biodata.html">Biodata</a></li>
+</ul>
+</nav>
+<br>
+<marquee>Chengannur is a municipal town in the Alappuzha district of Kerala, India. It's located on the banks of the Pamba River..Chengannur is also a major point for pilgrims to the Sabarimala Temple. It's been described as "The Gateway to Sabarimala"</marquee>
+<section class="main">
+<br>
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 8</div>
+      <img src="gallery/1.webp" class="img">
+    
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 8</div>
+      <img src="gallery/2.webp" class="img">
+    
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 8</div>
+      <img src="gallery/3.webp" class="img">
+
+    </div>
+      <div class="mySlides fade">
+      <div class="numbertext">4 / 8</div>
+      <img src="gallery/4.webp" class="img">
+
+    </div>
+      <div class="mySlides fade">
+      <div class="numbertext">5 / 8</div>
+      <img src="gallery/5.webp" class="img">
+
+    </div>
+      <div class="mySlides fade">
+      <div class="numbertext">6 / 8</div>
+      <img src="gallery/6.webp" class="img">
+
+    </div>
+      <div class="mySlides fade">
+      <div class="numbertext">7 / 8</div>
+      <img src="gallery/7.webp" class="img">
+
+    </div>
+      <div class="mySlides fade">
+      <div class="numbertext">8 / 8</div>
+      <img src="gallery/8.webp" class="img">
+
+    </div>
+    
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+      <span class="dot" onclick="currentSlide(6)"></span>
+      <span class="dot" onclick="currentSlide(7)"></span>
+      <span class="dot" onclick="currentSlide(8)"></span>
+    </div>
+    
+</section>
+<br>
+<hr>
+<center><h4 id="contact">Website Designed By <a class="hyper" href="https://jaisonemathew.tech/">| Jaison E Mathew|</a></h2></center>
+<hr>
+<ul>
+
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>   
+</body>
+</html>
